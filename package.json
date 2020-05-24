@@ -1,0 +1,17 @@
+{
+  "name": "brain-lyrics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "brain.js": "^2.0.0-beta.1",
+    "dotenv": "^8.2.0",
+    "genius-api": "^0.4.1",
+    "lodash": "^4.17.15",
+    "scrape-it": "^5.2.3"
+  },
+  "scripts": {
+    "download-lyrics": "node download-lyrics.js",
+    "get-training-data": "yarn download-lyrics && rm training-set.txt && cat ./lyrics/*.txt > ./training-set.txt"
+  }
+}
